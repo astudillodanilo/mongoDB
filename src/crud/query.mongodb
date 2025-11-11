@@ -1,0 +1,3 @@
+use("adso_mongo")
+
+db.products.find()
