@@ -1,0 +1,13 @@
+use("adso_mongo")
+db.products.updateOne(
+    //query
+    {_id:2},
+    //change => operatiors
+    {
+       $set: {
+        name: 'change name',
+        price: 3000,
+        tags: ['A','B','C']
+        }
+    }
+);

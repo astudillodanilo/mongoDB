@@ -19,7 +19,22 @@ db.products.insertMany([
         name: "Product 3",
         price:1200
 
+    },
+    {
+        _id:4,
+        name: "Product 4",
+        price:120
+
+    },
+    {
+        
+        name: "Product 5",
+        price:5022
+
     }
-])
+
+], {
+    ordered : false
+})
 
 db.products.find()

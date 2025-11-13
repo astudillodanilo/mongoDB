@@ -1,0 +1,11 @@
+use("adso_mongo")
+db.products.updateOne(
+    //query
+    {_id: ObjectId("6913cb1cb1690bc04bb3c9b6")},
+    //change => operatiors
+    {
+       $inc: {
+        price: 100,
+        }
+    }
+);
